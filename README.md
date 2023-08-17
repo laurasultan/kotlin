@@ -2,6 +2,7 @@
 <b>Desenvolvimento de Aplicativos I</b>
 
 * Plataforma Online — <a href="https://play.kotlinlang.org"> Kotlin Playground </a>
+* Programa — <a href="https://www.jetbrains.com/idea/"> IntelliJ </a>
 
 <!--
 
