@@ -18,12 +18,14 @@
 3. O que é tipagem de dados?
     Dados númericos e alfanuméricos dados literais e dados lógicos.
     
-    Números inteiros — int, byte, short, long
-    Números de ponto flutuante — float, double
+    [char 1 byte 8 bits]
+    
+    Números inteiros — int* (32), byte (8), short (16), long (64)
+    Números de ponto flutuante — double* (64), float (32)
+    Texto — String*
     Caracteres — char
-    Booleano — boolean
-    Texto — String
     Arrays — Array
+    Booleano — boolean* (lógico)
     Coleções — List, Set, Map
     Data — Date
 
