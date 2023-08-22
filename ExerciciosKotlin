@@ -1,0 +1,106 @@
+SALÁRIO BASE
+
+fun main(args: Array<String>) {
+    print("Informe o salário base: ")
+    val salarioBase : Double = readln().toDouble()
+    
+    val gratificacao : Double = salarioBase + salarioBase * 0.05
+    val imposto : Double = gratificacao - gratificacao * 0.07
+    
+    println("\nSalário a receber: $imposto")
+}
+
+--------------------------------------------------------------------------------
+
+PRODUTO
+
+fun main(args: Array<String>) {
+    print("Informe o nome do produto: ")
+    val nome : String = readln()
+    
+    print("Informe a quantidade do produto: ")
+    val quantidade : Int = readln().toInt()
+    
+    print("Informe o valor unitário do produto: ")
+    val valorUnitario : Double = readln().toDouble()
+    
+    val valorTotal : Double = quantidade * valorUnitario
+    val acrescimo : Double = valorTotal + valorTotal * 0.035
+    val desconto : Double = valorTotal - valorTotal * 0.025
+    
+    println("\nDados do produto:")
+    println("Nome: $nome")
+    println("Quantidade: $quantidade")
+    println("Valor unitário: $valorUnitario")
+    println("Valor total: $valorTotal")
+    println("Valor total com 3,5% de acréscimo: $acrescimo")
+    println("Valor total com 2,5% de desconto: $desconto")
+}
+
+--------------------------------------------------------------------------------
+
+DESAFIOS COM "IF"
+
+MÉDIA
+
+fun main(args: Array<String>) {
+    print("Insira seu nome: ")
+    val nome : String = readln()
+    
+    print("Insira seu RA: ")
+    val ra : String = readln()
+    
+    print("Informe sua nota N1: ")
+    val nota1 : Double = readln().toDouble()
+    
+    print("Informe sua nota N2: ")
+    val nota2 : Double = readln().toDouble()
+    
+    val mediaFinal : Double = (nota1 + nota2) / 2
+    
+    println("\nNome: $nome")
+    println("RA: $ra")
+    println("Nota N1: $nota1")
+    println("Nota N2: $nota2")
+    println("Média final: $mediaFinal")
+    
+    if (mediaFinal >= 6.0) {
+        println("\nAprovada")
+    } else {
+        println("\nReprovada")
+    }
+}
+
+--------------------------------------------------------------------------------
+
+NÚMERO REAL
+
+fun main(args: Array<String>) {
+    print("Digite um número real: ")
+    val real : Double = readln().toDouble()
+    
+    if (real < 0) {
+        println("\n$real é um número negativo")
+    } if else (real > 0) {
+        println("\n$real é um número positivo")
+    } else {
+        println("\nNulo")
+    }
+}
+
+--------------------------------------------------------------------------------
+
+PAR OU ÍMPAR
+
+fun main(args: Array<String>) {
+    print("Digite um número real: ")
+    val inteiro : Int = readln().toInt()
+    
+    if (inteiro % 2 == 0) {
+        println("\n$inteiro é um número par")
+    } else (inteiro == 0) {
+      println("\nNulo")  
+    } else {
+        println("\n$inteiro é um número ímpar")
+    }
+}
