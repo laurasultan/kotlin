@@ -5,7 +5,7 @@ fun main(args: Array<String>) {
     print("Informe o valor das vendas: ")
     val valorVendas : Double = readln().toDouble()
 
-    val comissao : Double = valorVendas + valorVendas * 0.04
+    val comissao : Double = valorVendas * 0.04
 
     val salarioFinal : Double = salarioFixo + comissao
 
