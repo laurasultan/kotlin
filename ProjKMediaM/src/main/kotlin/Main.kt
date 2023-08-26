@@ -1,30 +1,33 @@
 fun main(args: Array<String>) {
-    print("Insira seu nome: ")
+    print("Informe os dados da aluna: \n" +
+            "Nome: ")
     val nome : String = readln()
 
-    print("Insira seu RA: ")
+    print("RA: ")
     val ra : Long = readln().toLong()
 
-    print("Informe sua nota N1: ")
-    val nota1 : Double = readln().toDouble()
+    print("Nota 1: ")
+    val nota1 : Float = readln().toFloat()
 
-    print("Informe sua nota N2: ")
-    val nota2 : Double = readln().toDouble()
+    print("Nota 2: ")
+    val nota2 : Float = readln().toFloat()
 
-    val mediaFinal : Double = (nota1 + nota2) / 2
+    val media = (nota1 + nota2) / 2
 
+    print("Situação: ")
     val situacao : String
 
-    if (mediaFinal >= 6.0) {
+    if (media >= 6) {
         situacao = "Aprovada"
     } else {
         situacao = "Reprovada"
     }
 
-    println("\nNome: $nome")
-    println("RA: $ra")
-    println("Nota N1: $nota1")
-    println("Nota N2: $nota2")
-    println("Média final: $mediaFinal")
-    println("Situação: $situacao")
+    println("\n\nDados da aluna\n" +
+            "Nome: $nome\n" +
+            "RA: $ra\n" +
+            "Nota 1: $nota1\n" +
+            "Nota 2: $nota2\n" +
+            "Média final: $media\n" +
+            "Situação: $situacao")
 }
