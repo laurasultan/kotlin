@@ -1,12 +1,13 @@
 fun main(args: Array<String>) {
-    print("Digite um número real: ")
+    print("\nDigite um número real: ")
     val real : Double = readln().toDouble()
 
-    if (real < 0) {
-        println("\n$real é um número negativo")
-    }; if (real > 0) {
-        println("\n$real é um número positivo")
-    } else {
-        println("\nNulo")
+    var resultado : String = "Nulo"
+    // var = variável mutável
+
+    if (real > 0) {
+        resultado = "Positivo"
+    } else if (real < 0) {
+        resultado = "Negativo"
     }
 }
